@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
-    "name": "blog"
+    "name": "blog",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -15,6 +16,15 @@
     },
     "desc": {
       "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "homes",
   "info": {
-    "name": "home"
+    "name": "home",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,8 +11,53 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
+    "mission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.section",
+      "required": true
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.section",
+      "required": true
+    },
+    "session": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.section",
+      "required": true
+    },
+    "sessionAgenda": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.list",
+      "required": true
+    },
+    "learn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.section",
+      "required": true
+    },
+    "learnModes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.section",
+      "required": true
+    },
+    "learnPathways": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.section",
+      "required": true
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.section",
+      "required": true
     }
   }
 }

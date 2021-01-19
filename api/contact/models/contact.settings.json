@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "contact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "caption": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "required": true,
+      "component": "general.listwithtitle"
+    }
+  }
+}

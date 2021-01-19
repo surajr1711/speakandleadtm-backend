@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "testimonials",
   "info": {
-    "name": "blog",
-    "description": ""
+    "name": "testimonial"
   },
   "options": {
     "increments": true,
@@ -11,24 +10,20 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "author": {
+    "occupation": {
       "type": "string",
-      "required": true
-    },
-    "date": {
-      "type": "date",
       "required": true
     },
     "desc": {
       "type": "text",
       "required": true
     },
-    "body": {
-      "type": "richtext",
+    "date": {
+      "type": "date",
       "required": true
     },
     "image": {
@@ -38,11 +33,6 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title",
       "required": true
     }
   }
